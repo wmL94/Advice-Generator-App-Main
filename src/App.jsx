@@ -1,8 +1,8 @@
 import { useEffect, useState, } from 'react'
 import './App.css'
-import desktopDivider from './src/assets/pattern-divider-desktop.svg'
-import mobileDivider from './src/assets/pattern-divider-mobile.svg'
-import diceIcon from './src/assets/icon-dice.svg'
+import desktopDivider from '/src/assets/pattern-divider-desktop.svg'
+import mobileDivider from '/src/assets/pattern-divider-mobile.svg'
+import diceIcon from '/src/assets/icon-dice.svg'
 
 
 
