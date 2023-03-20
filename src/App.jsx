@@ -1,5 +1,8 @@
 import { useEffect, useState, } from 'react'
 import './App.css'
+import desktopDivider from "./src/assets/pattern-divider-desktop.svg"
+import mobileDivider from "./src/assets/pattern-divider-mobile.svg"
+import diceIcon from "./src/assets/icon-dice.svg"
 
 
 
@@ -27,10 +30,10 @@ function App() {
     <div className='card'>
       <p>ADVICE #{data.slip && data.slip.id}</p>
       <h2>"{data.slip && data.slip.advice}"</h2>
-      <img className='divider-desktop' src="./src/assets/pattern-divider-desktop.svg" alt="Divider desktop" />
-      <img className='divider-mobile' src="./src/assets/pattern-divider-mobile.svg" alt="Divider mobile" />
+      <img className='divider-desktop' src={desktopDivider} alt="Divider desktop" />
+      <img className='divider-mobile' src={mobileDivider} alt="Divider mobile" />
       <div className='dice' onClick={generateNewData}>
-        <img src="./src/assets/icon-dice.svg" alt="Dice icon" />
+        <img src={diceIcon} alt="Dice icon" />
       </div>
     </div>
   )
